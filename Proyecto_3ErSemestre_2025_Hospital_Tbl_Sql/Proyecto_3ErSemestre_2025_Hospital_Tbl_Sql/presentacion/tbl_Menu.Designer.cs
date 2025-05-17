@@ -30,22 +30,22 @@
         {
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.btn_salir = new System.Windows.Forms.PictureBox();
-            this.btn_minimizar = new System.Windows.Forms.PictureBox();
             this.btn_maximizar = new System.Windows.Forms.PictureBox();
+            this.btn_minimizar = new System.Windows.Forms.PictureBox();
+            this.btn_restaurar = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnPacientes = new System.Windows.Forms.Button();
+            this.btnHabitaciones = new System.Windows.Forms.Button();
+            this.btnGestionHabitaciones = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelFormulario = new System.Windows.Forms.Panel();
-            this.btn_restaurar = new System.Windows.Forms.PictureBox();
-            this.btnGestionHabitaciones = new System.Windows.Forms.Button();
-            this.btnHabitaciones = new System.Windows.Forms.Button();
-            this.btnPacientes = new System.Windows.Forms.Button();
             this.panelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBarraTitulo
@@ -75,19 +75,6 @@
             this.btn_salir.TabStop = false;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
-            // btn_minimizar
-            // 
-            this.btn_minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_minimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
-            this.btn_minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_minimizar.Image = global::Proyecto_3ErSemestre_2025_Hospital_Tbl_Sql.Properties.Resources.Minimizar_Verde_pequeño;
-            this.btn_minimizar.Location = new System.Drawing.Point(765, 10);
-            this.btn_minimizar.Name = "btn_minimizar";
-            this.btn_minimizar.Size = new System.Drawing.Size(20, 20);
-            this.btn_minimizar.TabIndex = 1;
-            this.btn_minimizar.TabStop = false;
-            this.btn_minimizar.Click += new System.EventHandler(this.btn_minimizar_Click);
-            // 
             // btn_maximizar
             // 
             this.btn_maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -101,6 +88,33 @@
             this.btn_maximizar.TabStop = false;
             this.btn_maximizar.Click += new System.EventHandler(this.btn_maximizar_Click);
             // 
+            // btn_minimizar
+            // 
+            this.btn_minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_minimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
+            this.btn_minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_minimizar.Image = global::Proyecto_3ErSemestre_2025_Hospital_Tbl_Sql.Properties.Resources.Minimizar_Verde_pequeño;
+            this.btn_minimizar.Location = new System.Drawing.Point(765, 10);
+            this.btn_minimizar.Name = "btn_minimizar";
+            this.btn_minimizar.Size = new System.Drawing.Size(20, 20);
+            this.btn_minimizar.TabIndex = 1;
+            this.btn_minimizar.TabStop = false;
+            this.btn_minimizar.Click += new System.EventHandler(this.btn_minimizar_Click);
+            // 
+            // btn_restaurar
+            // 
+            this.btn_restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_restaurar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
+            this.btn_restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_restaurar.Image = global::Proyecto_3ErSemestre_2025_Hospital_Tbl_Sql.Properties.Resources.ventana_min_pequeño;
+            this.btn_restaurar.Location = new System.Drawing.Point(791, 10);
+            this.btn_restaurar.Name = "btn_restaurar";
+            this.btn_restaurar.Size = new System.Drawing.Size(20, 20);
+            this.btn_restaurar.TabIndex = 3;
+            this.btn_restaurar.TabStop = false;
+            this.btn_restaurar.Visible = false;
+            this.btn_restaurar.Click += new System.EventHandler(this.btn_restaurar_Click);
+            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
@@ -112,6 +126,36 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 460);
             this.panelMenu.TabIndex = 1;
+            // 
+            // btnPacientes
+            // 
+            this.btnPacientes.Location = new System.Drawing.Point(29, 229);
+            this.btnPacientes.Name = "btnPacientes";
+            this.btnPacientes.Size = new System.Drawing.Size(132, 45);
+            this.btnPacientes.TabIndex = 2;
+            this.btnPacientes.Text = "Pacientes";
+            this.btnPacientes.UseVisualStyleBackColor = true;
+            this.btnPacientes.Click += new System.EventHandler(this.btnPacientes_Click);
+            // 
+            // btnHabitaciones
+            // 
+            this.btnHabitaciones.Location = new System.Drawing.Point(29, 178);
+            this.btnHabitaciones.Name = "btnHabitaciones";
+            this.btnHabitaciones.Size = new System.Drawing.Size(132, 45);
+            this.btnHabitaciones.TabIndex = 1;
+            this.btnHabitaciones.Text = "Habitaciones";
+            this.btnHabitaciones.UseVisualStyleBackColor = true;
+            this.btnHabitaciones.Click += new System.EventHandler(this.btnHabitaciones_Click);
+            // 
+            // btnGestionHabitaciones
+            // 
+            this.btnGestionHabitaciones.Location = new System.Drawing.Point(29, 127);
+            this.btnGestionHabitaciones.Name = "btnGestionHabitaciones";
+            this.btnGestionHabitaciones.Size = new System.Drawing.Size(132, 45);
+            this.btnGestionHabitaciones.TabIndex = 0;
+            this.btnGestionHabitaciones.Text = "Gestion Habitaciones colocho";
+            this.btnGestionHabitaciones.UseVisualStyleBackColor = true;
+            this.btnGestionHabitaciones.Click += new System.EventHandler(this.btnGestionHabitaciones_Click);
             // 
             // panelContenedor
             // 
@@ -135,50 +179,6 @@
             this.panelFormulario.Size = new System.Drawing.Size(652, 460);
             this.panelFormulario.TabIndex = 2;
             // 
-            // btn_restaurar
-            // 
-            this.btn_restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_restaurar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
-            this.btn_restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_restaurar.Image = global::Proyecto_3ErSemestre_2025_Hospital_Tbl_Sql.Properties.Resources.ventana_min_pequeño;
-            this.btn_restaurar.Location = new System.Drawing.Point(791, 10);
-            this.btn_restaurar.Name = "btn_restaurar";
-            this.btn_restaurar.Size = new System.Drawing.Size(20, 20);
-            this.btn_restaurar.TabIndex = 3;
-            this.btn_restaurar.TabStop = false;
-            this.btn_restaurar.Visible = false;
-            this.btn_restaurar.Click += new System.EventHandler(this.btn_restaurar_Click);
-            // 
-            // btnGestionHabitaciones
-            // 
-            this.btnGestionHabitaciones.Location = new System.Drawing.Point(29, 127);
-            this.btnGestionHabitaciones.Name = "btnGestionHabitaciones";
-            this.btnGestionHabitaciones.Size = new System.Drawing.Size(132, 45);
-            this.btnGestionHabitaciones.TabIndex = 0;
-            this.btnGestionHabitaciones.Text = "Gestion Habitaciones";
-            this.btnGestionHabitaciones.UseVisualStyleBackColor = true;
-            this.btnGestionHabitaciones.Click += new System.EventHandler(this.btnGestionHabitaciones_Click);
-            // 
-            // btnHabitaciones
-            // 
-            this.btnHabitaciones.Location = new System.Drawing.Point(29, 178);
-            this.btnHabitaciones.Name = "btnHabitaciones";
-            this.btnHabitaciones.Size = new System.Drawing.Size(132, 45);
-            this.btnHabitaciones.TabIndex = 1;
-            this.btnHabitaciones.Text = "Habitaciones";
-            this.btnHabitaciones.UseVisualStyleBackColor = true;
-            this.btnHabitaciones.Click += new System.EventHandler(this.btnHabitaciones_Click);
-            // 
-            // btnPacientes
-            // 
-            this.btnPacientes.Location = new System.Drawing.Point(29, 229);
-            this.btnPacientes.Name = "btnPacientes";
-            this.btnPacientes.Size = new System.Drawing.Size(132, 45);
-            this.btnPacientes.TabIndex = 2;
-            this.btnPacientes.Text = "Pacientes";
-            this.btnPacientes.UseVisualStyleBackColor = true;
-            this.btnPacientes.Click += new System.EventHandler(this.btnPacientes_Click);
-            // 
             // tbl_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,11 +192,11 @@
             this.Text = "tbl_Menu";
             this.panelBarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_salir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelContenedor.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_restaurar)).EndInit();
             this.ResumeLayout(false);
 
         }
