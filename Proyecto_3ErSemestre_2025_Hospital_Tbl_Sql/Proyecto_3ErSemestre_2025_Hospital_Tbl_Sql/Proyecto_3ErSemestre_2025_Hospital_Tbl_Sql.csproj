@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,45 +50,48 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="datos\CDconexion.cs" />
-    <Compile Include="presentacion\tbl_GestioHabitaciones.cs">
+    <Compile Include="Datos\CDconexion.cs" />
+    <Compile Include="Datos\CDhabitaciones.cs" />
+    <Compile Include="Logica\CLhabitaciones.cs" />
+    <Compile Include="Presentacion\tbl_GestioHabitaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\tbl_GestioHabitaciones.Designer.cs">
+    <Compile Include="Presentacion\tbl_GestioHabitaciones.Designer.cs">
       <DependentUpon>tbl_GestioHabitaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\tbl_Habitaciones.cs">
+    <Compile Include="Presentacion\tbl_Habitaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\tbl_Habitaciones.Designer.cs">
+    <Compile Include="Presentacion\tbl_Habitaciones.Designer.cs">
       <DependentUpon>tbl_Habitaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\tbl_Menu.cs">
+    <Compile Include="Presentacion\tbl_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\tbl_Menu.Designer.cs">
+    <Compile Include="Presentacion\tbl_Menu.Designer.cs">
       <DependentUpon>tbl_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacion\tbl_Pacientes.cs">
+    <Compile Include="Presentacion\tbl_Pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\tbl_Pacientes.Designer.cs">
+    <Compile Include="Presentacion\tbl_Pacientes.Designer.cs">
       <DependentUpon>tbl_Pacientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="presentacion\tbl_GestioHabitaciones.resx">
+    <EmbeddedResource Include="Presentacion\tbl_GestioHabitaciones.resx">
       <DependentUpon>tbl_GestioHabitaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\tbl_Habitaciones.resx">
+    <EmbeddedResource Include="Presentacion\tbl_Habitaciones.resx">
       <DependentUpon>tbl_Habitaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\tbl_Menu.resx">
+    <EmbeddedResource Include="Presentacion\tbl_Menu.resx">
       <DependentUpon>tbl_Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacion\tbl_Pacientes.resx">
+    <EmbeddedResource Include="Presentacion\tbl_Pacientes.resx">
       <DependentUpon>tbl_Pacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -95,6 +104,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -108,9 +118,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Logica\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\ventana_min_pequeño.png" />
   </ItemGroup>
