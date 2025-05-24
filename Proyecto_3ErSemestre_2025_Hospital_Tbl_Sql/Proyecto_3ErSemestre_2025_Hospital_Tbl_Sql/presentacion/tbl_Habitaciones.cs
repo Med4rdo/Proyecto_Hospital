@@ -146,13 +146,13 @@ namespace Proyecto3er_SEMESTRE_Hospital_2025
         private void btneliminar_Click(object sender, EventArgs e)
         {
 
-            if (string.IsNullOrEmpty(LblCodigoHabitacion.Text))
+            if (string.IsNullOrEmpty(txtCodigoHabitacion.Text))
             {
                 MessageBox.Show("Favor seleccionar fila a eliminar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                int CodigoHabitacion = int.Parse(LblCodigoHabitacion.Text);
+                int CodigoHabitacion = int.Parse(txtCodigoHabitacion.Text);
 
                 try
                 {
